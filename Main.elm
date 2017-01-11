@@ -70,9 +70,9 @@ getTime =
 
 view : Model -> Html Msg
 view model =
-    div []
-        [ input [ placeholder "Name", onInput Name ] []
-        , input [ placeholder "YYYY/MM/DD", onInput Birthday ] []
+    div [ style [ ("text-align", "center"), ("font-size", "7vw")]]
+        [ input [ style [("width", "50%"), ("font-size", "7vw") ], placeholder "Name", onInput Name ] []
+        , input [ style [("width", "50%"), ("font-size", "7vw") ], placeholder "YYYY/MM/DD", onInput Birthday ] []
         , div []
             [ renderGreeting model.name
             , br [] []
